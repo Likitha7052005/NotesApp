@@ -27,7 +27,4 @@ This is a  backend for a React App, which is built using Express.JS and Node.JS,
  
   # API LINK
   https://api-stickynotes.onrender.com
-
-  # Frontend
-  **Frontend Repository Link:** https://github.com/HarshDev1809/Notes-App-Frontend
       
