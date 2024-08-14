@@ -23,30 +23,6 @@
   - Express.js: For building the RESTful API and routing.
   - MongoDB: As the database solution for storing notes and user information.
 
-## Project Structure
-
-```bash
-NotesApp/
-│
-├── public/                   # Public static files
-├── src/                      # Source code
-│   ├── components/           # React components
-│   ├── redux/                # Redux toolkit slices and store
-│   ├── services/             # API calls and related services
-│   ├── styles/               # Application-wide stylesheets
-│   └── App.js                # Main app component
-│
-├── server/                   # Backend code
-│   ├── config/               # Server configuration
-│   ├── controllers/          # Controller logic for API routes
-│   ├── models/               # Mongoose models for MongoDB
-│   ├── routes/               # API route definitions
-│   └── server.js             # Server entry point
-│
-├── package.json              # Dependency management
-└── README.md                 # Project documentation
-```
-
 ## Installation and Setup
 
 To get started with the NotesApp locally, follow these steps:
