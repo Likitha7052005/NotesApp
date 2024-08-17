@@ -5,3 +5,11 @@
     flex-wrap: wrap;
     flex-direction: row;
 }
+
+@media screen and (max-width:1000px) {
+    .landing-page-main-div{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+}

@@ -20,7 +20,8 @@ function LangingPage() {
   return (
     <div className="landing-page-main-div">
       <SignInPanel />
-      {windowWidth >= 768 ? <WelcomePanel /> : <></>}
+      {/* {windowWidth >= 768 ? <WelcomePanel /> : <></>} */}
+      <WelcomePanel />
     </div>
   );
 }

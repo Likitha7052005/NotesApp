@@ -5,12 +5,13 @@
 }
 
 .main-div{
-    background-color: #FFD700;
+    background-color: black;
     height : 100vh;
     width: 35vw;
     display: flex;
     justify-content: center;
     align-items: center;
+    min-width: 400px;
 }
 
 .signin-panel-div{
@@ -91,9 +92,9 @@
     height: 10%;
     width: 40%;
     border-radius: 7px;
+    border: none;
     margin: 10px 0px;
     font-size: 1.1em;
-    background-color: #3BB9FF;
 }
 
 .hover:hover{
@@ -109,6 +110,18 @@ button:hover{
 }
 
 @media screen and (max-width: 768px){
+    .main-div{
+        width: 100vw;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .main-div{
+        width: 40vw;
+    }
+}
+
+@media screen and (max-width: 1000px) {
     .main-div{
         width: 100vw;
     }

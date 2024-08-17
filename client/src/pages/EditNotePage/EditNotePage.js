@@ -81,19 +81,19 @@ function EditNotePage() {
         <div className="edit-note w-100">
           <form onSubmit = {saveChanges}>
             <div className="date">
-              <input className="rounded-2 p-1 border" type="date" value={inputNoteDate} onChange = {changeDate}></input>
+              <input className="rounded-2 p-1 bg-light border" type="date" value={inputNoteDate} onChange = {changeDate}></input>
             </div>
             <div className="heading">
-              <input type="text" className="rounded-2 border p-1" value={noteHeading} onChange = {changeHeading}></input>
+              <input type="text" className="rounded-2 border bg-light p-1" value={noteHeading} onChange = {changeHeading}></input>
             </div>
             <div className="body">
-              <textarea value={noteBody} className="rounded-2 border p-2 h-100" rows={2} required onChange = {changeBody}></textarea>
+              <textarea value={noteBody} className="rounded-2 bg-light border p-2 h-100" rows={2} required onChange = {changeBody}></textarea>
             </div>
             <div className="footer-div">
-              <button type="button" className="rounded border" onClick={cancelChanges}>
+              <button type="button" className="rounded border bg-black text-white" onClick={cancelChanges}>
                 Cancel
               </button>
-              <button type="submit" className="rounded border">save</button>
+              <button type="submit" className="rounded border bg-black text-white">save</button>
             </div>
           </form>
         </div>

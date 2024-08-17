@@ -1,5 +1,4 @@
 .main-div{
-    background-color: #FFD700;
     height : 100vh;
     width: 35vw;
     display: flex;
@@ -71,7 +70,7 @@
     border-radius: 7px;
     margin: 10px 0px;
     font-size: 1.1em;
-    background-color: #3BB9FF;
+    border: none;
 }
 
 .hover:hover{
@@ -84,4 +83,22 @@ button:hover{
 
 .mt-5{
     margin-top: 5px;
+}
+
+@media screen and (max-width: 768px){
+    .main-div{
+        width: 100vw;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .main-div{
+        width: 40vw;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .main-div{
+        width: 100vw;
+    }
 }

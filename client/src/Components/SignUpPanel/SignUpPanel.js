@@ -62,8 +62,8 @@ function SignUpPanel() {
   };
 
   return (
-    <div className="main-div">
-      <div className="signup-panel-div p-1">
+    <div className="main-div p-5">
+      <div className="signup-panel-div bg-white p-1 h-75 w-100">
         <div className="header-div">
           <h3>Welcome to Sticky Notes!</h3>
           <p>Sign up to continue</p>
@@ -83,7 +83,7 @@ function SignUpPanel() {
                 </form> */}
           <form className="input-form-signup" onSubmit={signUp}>
             <input
-              className="signup-input"
+              className="signup-input bg-light border"
               type="text"
               onChange={updateName}
               value={name}
@@ -96,7 +96,7 @@ function SignUpPanel() {
               <input type="text" className="form-control" id="name" value={name} onChange={updateName}/>
             </div> */}
             <input
-              className="signup-input"
+              className="signup-input bg-light border"
               type="text"
               onChange={updateUserName}
               value={userName}
@@ -109,7 +109,7 @@ function SignUpPanel() {
               <input type="text" className="form-control" id="user-name" value={userName} onChange={updateUserName}/>
             </div> */}
             <input
-              className="signup-input"
+              className="signup-input bg-light border"
               type="email"
               onChange={updateEmail}
               value={email}
@@ -122,7 +122,7 @@ function SignUpPanel() {
               <input type="email" className="form-control" id="email" value={email} onChange={updateEmail}/>
             </div> */}
             <input
-              className="signup-input"
+              className="signup-input bg-light border"
               type="password"
               onChange={updatePassword}
               value={password}
@@ -137,7 +137,7 @@ function SignUpPanel() {
             {/* <button type="submit" className="btn btn-primary">
               Sign up
             </button> */}
-            <button className="signup-btn" type="submit" placeholder="Sign up">
+            <button className="signup-btn bg-black text-white" type="submit" placeholder="Sign up">
               sign up
             </button>
             <div className="error-div">{errorMessage}</div>

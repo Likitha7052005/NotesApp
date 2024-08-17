@@ -42,19 +42,19 @@ function NoteOpened() {
     return (
       <div className="open-note w-100 d-flex flex-column justify-content-start">
         <div className="date">
-          <h6 className="rounded-2 p-2 border h-100 d-flex align-items-center">{noteDate}</h6>
+          <h6 className="rounded-2 p-2 border h-100 d-flex bg-light align-items-center">{noteDate}</h6>
         </div>
         <div className="heading">
-          <h1 className="rounded-2 border p-2 h-100 d-flex align-items-center">{noteHeading}</h1>
+          <h1 className="rounded-2 border p-2 h-100 d-flex bg-light align-items-center">{noteHeading}</h1>
         </div>
         <div className="body">
-          <pre className="rounded-2 border p-2 h-100">{noteBody}</pre>
+          <pre className="rounded-2 border p-2 h-100 bg-light">{noteBody}</pre>
         </div>
         <div className="footer-div">
-          <button type="button" className="rounded border" onClick={deleteNote}>
+          <button type="button" className="rounded border bg-black text-white" onClick={deleteNote}>
             delete
           </button>
-          <button type="button" className="rounded border" onClick={editNote}>
+          <button type="button" className="rounded border bg-black text-white" onClick={editNote}>
             Edit
           </button>
         </div>

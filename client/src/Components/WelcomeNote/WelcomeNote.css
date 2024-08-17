@@ -12,6 +12,7 @@
     justify-content: center;
     flex-wrap: wrap;
     border-radius: 7px;
+    min-width: 400px;
 }
 
 .close-btn-div{
@@ -22,6 +23,13 @@
     align-items: center;
     padding: 5px;
     border: 2px solid black;
+}
+
+.close-btn-div > button{
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: red;
+    border: none;
 }
 
 .date-div{
@@ -57,4 +65,21 @@
 
 .close-btn{
     font-size: 130%;
+}
+
+@media screen and (max-width:1200px) {
+    .main-div{
+        width: 40vw;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .main-div{
+        width: 75%;
+    }
+
+    .note-main-div{
+        width: 75% !important;
+        height: 75% !important;
+    }
 }

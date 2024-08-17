@@ -11,9 +11,9 @@ function Note(props) {
   }
 
   return (
-    <div className="card pb-3 note-card" onClick={clicked}>
-      <div className="card-header card-date">{props.noteDetails.date}</div>
-      <div className="card-body text-start overflow-hidden">
+    <div className="card pb-3 note-card bg-light" onClick={clicked}>
+      <div className="card-header card-date bg-dark text-white">{props.noteDetails.date}</div>
+      <div className="card-body text-start overflow-hidden bg-light">
         <h5 className="card-title text-start">{props.noteDetails.heading}</h5>
         <p className="card-text text-start">{props.noteDetails.body}</p>
       </div>

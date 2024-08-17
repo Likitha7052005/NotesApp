@@ -19,8 +19,8 @@ function HomePageHeader() {
   }
 
   return (
-    <div className="home-page-header-div">
-      <h1 onClick={goToHome}>Sticky Notes</h1>
+    <div className="home-page-header-div bg-black text-white">
+      <h1 onClick={goToHome}>Notes App</h1>
       <div className="dropdown">
         <button
           className="btn btn-outline-light"

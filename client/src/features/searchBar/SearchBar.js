@@ -21,7 +21,7 @@ function SearchBar() {
 
   return (
     <div className="search-bar-div d-flex justify-content-center align-items-center">
-      <div className="input-group w-25 text-centre">
+      <div className="input-group w-50 text-centre">
         <input
           type="text"
           className="form-control"
@@ -33,7 +33,7 @@ function SearchBar() {
         >
         </input>
         <button
-          className="btn btn-outline-secondary"
+          className="btn btn-outline-secondary bg-black text-white"
           type="button"
           id="button-addon2"
           onClick={clearValue}

@@ -10,18 +10,19 @@ function WelcomeNote(){
     }
 
     return <div className="note-main-div">
-        <div className="close-btn-div">
-            <span class="material-symbols-outlined close-btn">
+        <div className="close-btn-div bg-black">
+            {/* <span class="material-symbols-outlined close-btn">
                 close
-            </span>
+            </span> */}
+            <button className="h-75"></button>
         </div>
-        <div className="date-div">
-            <p>{note.date}</p>
+        <div className="date-div bg-light border">
+            <p className="h-100 m-0 d-flex align-items-center">{note.date}</p>
         </div>
-        <div className="heading-div">
+        <div className="heading-div bg-light border">
             <h4>{note.heading}</h4>
         </div>
-        <div className="body-div">
+        <div className="body-div bg-light border">
             <p>{note.body}</p>
         </div>
         {/* <div className="footer-btn-div">
