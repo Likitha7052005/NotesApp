@@ -38,9 +38,9 @@ function ProfilePage() {
           </p>
         </div>
       </div>
-      <footer className="footer vw-100 border vh-20">
+      {/* <footer className="footer vw-100 border vh-20">
             <Footer/>
-        </footer>
+        </footer> */}
     </div>
   );
 }

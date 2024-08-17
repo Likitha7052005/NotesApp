@@ -12,7 +12,7 @@
     justify-content: center;
     flex-wrap: wrap;
     border-radius: 7px;
-    min-width: 400px;
+    /* min-width: 400px; */
 }
 
 .close-btn-div{
@@ -79,7 +79,7 @@
     }
 
     .note-main-div{
-        width: 75% !important;
+        width: 90% !important;
         height: 75% !important;
     }
 }

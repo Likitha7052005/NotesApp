@@ -51,14 +51,12 @@
     font-size: 1.1em;
 }
 
-.footer-div{
+.signup-panel-div .footer-div{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 70px;
-    padding: 8px;
     font-size: 0.8em;
     height: 15%;
     width: 80%;

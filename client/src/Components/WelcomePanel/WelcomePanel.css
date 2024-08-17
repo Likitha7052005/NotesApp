@@ -36,8 +36,14 @@
     }
 
     .welcome-panel-main-div > header{
-        display: block;
+        display: flex;
         width: 100vw;
         height: 8vh;
     }
+
+    .welcome-panel-main-div .lower-section{
+        width: 100vw; 
+    }
+
+
 }

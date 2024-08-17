@@ -73,9 +73,9 @@ function NoteOpened() {
     <div className="opened-note-div">
       <HomePageHeader />
       {isLoading ? <Loader /> : showNotes()}
-      <footer className="footer vw-100 border vh-20">
+      {/* <footer className="footer vw-100 border vh-20">
             <Footer/>
-        </footer>
+        </footer> */}
     </div>
   );
 }

@@ -110,9 +110,9 @@ function EditNotePage() {
     <div className="edit-note-div-main">
       <HomePageHeader />
       {isLoading ? <Loader /> : showNote()}
-      <footer className="footer vw-100 border vh-20">
+      {/* <footer className="footer vw-100 border vh-20">
             <Footer/>
-        </footer>
+        </footer> */}
     </div>
   );
 }

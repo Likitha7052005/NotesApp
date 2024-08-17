@@ -67,8 +67,8 @@ function SignInPanel() {
   };
 
   return (
-    <div className="main-div p-5">
-      <div className="signin-panel-div bg-white text-dark p-1 h-75 w-100">
+    <div className="main-div">
+      <div className="signin-panel-div bg-white text-dark p-1 w-100">
         <div className="header-div">
           <h3>Welcome to Sticky Notes!</h3>
           <p>Sign in to continue</p>
