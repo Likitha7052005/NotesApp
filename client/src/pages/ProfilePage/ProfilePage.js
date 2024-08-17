@@ -1,6 +1,7 @@
 import { useState } from "react";
 import HomePageHeader from "../../Components/HomePageHeader/HomePageHeader";
 import "./ProfilePage.css"
+import Footer from "../../Components/Footer/Footer";
 
 function ProfilePage() {
 
@@ -37,6 +38,9 @@ function ProfilePage() {
           </p>
         </div>
       </div>
+      <footer className="footer vw-100 border vh-20">
+            <Footer/>
+        </footer>
     </div>
   );
 }

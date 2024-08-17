@@ -9,6 +9,7 @@ import { verifyUser } from "../../api/auth/verify/verify.user.api";
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { setData } from "../../features/notesData/notesDataSlice";
+import AddBtn from "../AddBtn/AddBtn";
 
 function Notes() {
 
@@ -63,6 +64,7 @@ function Notes() {
   return (
     <div className="notes">
     {isLoading ? <Loader /> : showNotes()}
+    <AddBtn/>
     </div>
   );
 }

@@ -20,10 +20,15 @@
     padding: 0;
 }
 
+/* .add-btn-div{
+    position: relative;
+    right : 4vh;
+    bottom: 4vh;
+} */
+
 .new-btn {
     height: 100%;
     width: 100%;
-    background-color: #FFD700;
     border-radius:10px ;
     
 }
@@ -33,3 +38,5 @@
     width: 100%;
     font-size: 3em;
 }
+
+  

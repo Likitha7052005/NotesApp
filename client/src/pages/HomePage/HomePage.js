@@ -3,6 +3,7 @@ import Footer from "../../Components/Footer/Footer";
 import HomePageHeader from "../../Components/HomePageHeader/HomePageHeader";
 import Notes from "../../Components/Notes/Notes";
 import SearchBar from "../../features/searchBar/SearchBar";
+import "./HomePage.css"
 
 function HomePage(){
     return <div>
@@ -10,10 +11,11 @@ function HomePage(){
         <SearchBar />
         <Notes />
         <AddBtn />
-        {/* <footer>
+        {/* <footer className="footer">
             <Footer/>
         </footer> */}
     </div>
 }
 
 export default HomePage;
+

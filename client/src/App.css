@@ -48,3 +48,15 @@ button :hover{
   background-color: white;
   color: black;
 }
+
+.vh-10{
+  height: 10vh;
+}
+
+.vh-25{
+  height: 25vh;
+}
+
+.vh-20{
+  height: 20vh;
+}

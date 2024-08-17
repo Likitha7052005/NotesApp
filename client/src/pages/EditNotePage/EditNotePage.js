@@ -5,6 +5,7 @@ import HomePageHeader from "../../Components/HomePageHeader/HomePageHeader";
 import Loader from "../../Components/Loader/Loader";
 import { inputDate , outputDate} from "../../Modules/date";
 import "./EditNotePage.css"
+import Footer from "../../Components/Footer/Footer";
 const {todayDateString, todayDate} = require("../../Modules/date");
 
 function EditNotePage() {
@@ -109,6 +110,9 @@ function EditNotePage() {
     <div className="edit-note-div-main">
       <HomePageHeader />
       {isLoading ? <Loader /> : showNote()}
+      <footer className="footer vw-100 border vh-20">
+            <Footer/>
+        </footer>
     </div>
   );
 }
