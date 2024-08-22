@@ -66,7 +66,7 @@ To get started with the NotesApp locally, follow these steps:
 
 ## Deployment
 
-The app is deployed on Render. You can access the live version [here](https://stickynotes-i11f.onrender.com/).
+The app is deployed on Render. You can access the live version [here](https://notesapp-d8lp.onrender.com/).
 
 ## Future Improvements
 
