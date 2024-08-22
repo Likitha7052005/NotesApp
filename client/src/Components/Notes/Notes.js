@@ -10,6 +10,8 @@ import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { setData } from "../../features/notesData/notesDataSlice";
 import AddBtn from "../AddBtn/AddBtn";
+import {Face} from "@moj-ui/fun-ui"
+import EmptyPage from "../EmptyPage/EmptyPage";
 
 function Notes() {
 
@@ -44,20 +46,24 @@ function Notes() {
     return () => {};
   }, []);
 
-  function showThis() {
-    console.log("hello");
+  const function1 = ()=>{
+    let count = 0
+     const data = noteData.map((note)=>{
+      if(note.heading.includes(searchValue) || note.body.includes(searchValue)){
+        return <Note noteDetails={note}/>
+      }else{
+        count += 1;
+      }
+  })
+  if(count===data.length){
+    return <EmptyPage />
   }
-
+  return data;
+  }
 
   function showNotes(){
     return <div className="notes-div">
-        {noteData.map((note)=>{
-            if(note.heading.includes(searchValue) || note.body.includes(searchValue)){
-              return <Note noteDetails={note}/>
-            }else{
-              return
-            }
-        })}
+        {noteData.length ? function1() : <EmptyPage/>}
     </div>
   }
 
