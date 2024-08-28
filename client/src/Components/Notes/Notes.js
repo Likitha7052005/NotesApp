@@ -49,7 +49,7 @@ function Notes() {
   const function1 = ()=>{
     let count = 0
      const data = noteData.map((note)=>{
-      if(note.heading.includes(searchValue) || note.body.includes(searchValue)){
+      if(note.heading.toLowerCase().includes(searchValue) || note.body.toLowerCase().includes(searchValue)){
         return <Note noteDetails={note}/>
       }else{
         count += 1;
