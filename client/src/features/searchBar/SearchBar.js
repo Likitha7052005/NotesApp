@@ -14,9 +14,10 @@ function SearchBar() {
     dispatch(setValue(""));
   }
 
-  const updateValue = (e)=>{
-    setInputValue(e.target.value);
-    dispatch(setValue(e.target.value));
+  const updateValue = (e) => {
+    const lowerCaseValue = e.target.value.toLowerCase();
+    setInputValue(lowerCaseValue);
+    dispatch(setValue(lowerCaseValue));
   }
 
   return (
