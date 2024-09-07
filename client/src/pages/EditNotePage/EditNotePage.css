@@ -5,7 +5,6 @@
 }
 
 .edit-note-div{
-    /* border: 2px solid black; */
     height: 90vh;
     display: flex;
     justify-content: center;
@@ -14,7 +13,6 @@
 }
 
 .edit-note-div .edit-note{
-    /* border: 2px solid black; */
     height: 95%;
 }
 
@@ -30,13 +28,11 @@
     height: 8vh;
     padding: 10px;
     width: 100%;
-    /* border: 1px solid black; */
 }
 
 .edit-note-div .body{
     height: 65vh;
     width: 100%;
-    /* border : 1px solid black; */
     padding: 10px;
 }
 
@@ -67,7 +63,6 @@
     margin: 0;
     height: 6vh;
     width: 100%;
-    /* border: 1px solid black; */
     display: flex;
     justify-content: space-around;
     align-items: center;

@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import Loader from "../../Components/Loader/Loader";
 import { deleteNoteId, getNoteById } from "../../api/notes/notes.api";
 import "./NoteOpened.css";
-import Footer from "../../Components/Footer/Footer";
 
 function NoteOpened() {
   const navigate = useNavigate();
@@ -73,9 +72,6 @@ function NoteOpened() {
     <div className="opened-note-div">
       <HomePageHeader />
       {isLoading ? <Loader /> : showNotes()}
-      {/* <footer className="footer vw-100 border vh-20">
-            <Footer/>
-        </footer> */}
     </div>
   );
 }

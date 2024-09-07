@@ -11,9 +11,6 @@ function HomePage(){
         <SearchBar />
         <Notes />
         <AddBtn />
-        {/* <footer className="footer">
-            <Footer/>
-        </footer> */}
     </div>
 }
 

@@ -38,7 +38,6 @@
     flex-wrap: wrap;
     justify-content: center;
     border-radius: 10px;
-    /* background-color: rgba(263,263,263,0.7); */
     background: linear-gradient(135deg, #92e1ff , #8878ff );
     box-shadow: 5px 5px 10px #5563c1;
     padding: 10px !important;
@@ -73,7 +72,7 @@
     font-size: 1.1em;
     border: none;
     background-color: #6d60cc ;
-    transition: background-color 0.3s
+    transition: background-color 0.3s;
 
 }
 

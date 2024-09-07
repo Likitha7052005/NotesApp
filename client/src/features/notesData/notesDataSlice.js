@@ -1,5 +1,4 @@
 import {createSlice} from "@reduxjs/toolkit"
-import searchBarSlice from "../searchBar/searchBarSlice"
 
 const initialState = {
     value : [],

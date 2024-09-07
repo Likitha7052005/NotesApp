@@ -41,7 +41,6 @@ function SearchBar() {
         >
           clear
         </button>
-        {/* <button type="button" className="btn-close btn btn-outline-secondary" aria-label="Close"></button> */}
       </div>
     </div>
   );

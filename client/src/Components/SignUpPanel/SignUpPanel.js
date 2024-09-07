@@ -69,18 +69,6 @@ function SignUpPanel() {
           <p>Sign up to continue</p>
         </div>
         <div className="form-div">
-          {/* <form className="input-form" onSubmit = {signIn}>
-                    <input className = "signin-input" type="text" onChange = {changeUserName} value = {userName} placeholder="Username"></input>
-                    <input className = "signin-input" type="password" onChange = {changePassword} value = {password} placeholder="Password"></input>
-                    <button className="signin-btn" type="submit" placeholder="Sign in">sign in</button>
-                    <div className = "error-div">
-                        {errorMessage}
-                    </div>
-                    <div className="footer-div">
-                        <span className="mt-5 hover" onClick={goToSignUpPage}>New User ? Sign up</span>
-                        <span className="mt-5 hover" onClick={goToSkipPage}>Skip</span>
-                    </div>
-                </form> */}
           <form className="input-form-signup" onSubmit={signUp}>
             <input
               className="signup-input bg-light border"
@@ -89,12 +77,6 @@ function SignUpPanel() {
               value={name}
               placeholder="Name"
             ></input>
-            {/* <div className="mb-3">
-              <label for="name" className="form-label">
-                Name
-              </label>
-              <input type="text" className="form-control" id="name" value={name} onChange={updateName}/>
-            </div> */}
             <input
               className="signup-input bg-light border"
               type="text"
@@ -102,12 +84,6 @@ function SignUpPanel() {
               value={userName}
               placeholder="User Name"
             ></input>
-            {/* <div className="mb-3">
-              <label for="user-name" className="form-label">
-                User Name
-              </label>
-              <input type="text" className="form-control" id="user-name" value={userName} onChange={updateUserName}/>
-            </div> */}
             <input
               className="signup-input bg-light border"
               type="email"
@@ -115,12 +91,6 @@ function SignUpPanel() {
               value={email}
               placeholder="Email"
             ></input>
-            {/* <div className="mb-3">
-              <label for="email" className="form-label">
-                Email address
-              </label>
-              <input type="email" className="form-control" id="email" value={email} onChange={updateEmail}/>
-            </div> */}
             <input
               className="signup-input bg-light border"
               type="password"
@@ -128,15 +98,6 @@ function SignUpPanel() {
               value={password}
               placeholder="Password"
             ></input>
-            {/* <div className="mb-3">
-              <label for="password" className="form-label">
-                Password
-              </label>
-              <input type="password" className="form-control" id="password" value={password} onChange={updatePassword}/>
-            </div> */}
-            {/* <button type="submit" className="btn btn-primary">
-              Sign up
-            </button> */}
             <button className="signup-btn text-white" type="submit" placeholder="Sign up">
               sign up
             </button>
@@ -145,9 +106,6 @@ function SignUpPanel() {
               <span className="hover" onClick={goToSignupPage}>
                 Already have account ? Sign in
               </span>
-              {/* <span className="mt-5 hover" onClick={goToSkipPage}>
-                Skip
-              </span> */}
             </div>
           </form>
         </div>

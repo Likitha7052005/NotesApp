@@ -5,7 +5,6 @@
 }
 
 .note-main-div{
-    /* border: 2px solid black; */
     height: 60%;
     width: 50%;
     display: flex;
@@ -14,9 +13,6 @@
     border-radius: 7px;
     background-color: white;
     box-shadow: 5px 5px 10px #5563c1;
-    /* font-family: "Times New Roman", Times, serif; */
-    /* font-family: "Playfair Display", serif; */
-    /* min-width: 400px; */
 }
 
 .close-btn-div{
@@ -27,8 +23,6 @@
     align-items: center;
     padding: 5px;
     border-radius:  7px 7px 0px 0px;
-    /* background: linear-gradient(135deg, #667eea, #764ba2); */
-    /* background-color: #5563c1; */
     background-color: #6d60cc ;
 }
 

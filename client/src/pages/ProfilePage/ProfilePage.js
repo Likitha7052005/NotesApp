@@ -1,13 +1,11 @@
 import { useState } from "react";
 import HomePageHeader from "../../Components/HomePageHeader/HomePageHeader";
-import "./ProfilePage.css"
-import Footer from "../../Components/Footer/Footer";
+import "./ProfilePage.css";
 
 function ProfilePage() {
-
-    const [name, setName] = useState(sessionStorage.getItem("name"));
-    const [emailId, setEmailId] = useState(sessionStorage.getItem("emailId"));
-    const [userName, setUserName] = useState(sessionStorage.getItem("userName"));
+  const [name, setName] = useState(sessionStorage.getItem("name"));
+  const [emailId, setEmailId] = useState(sessionStorage.getItem("emailId"));
+  const [userName, setUserName] = useState(sessionStorage.getItem("userName"));
 
   return (
     <div className="page d-flex justify-content-center flex-column align-items-center">
@@ -38,9 +36,6 @@ function ProfilePage() {
           </p>
         </div>
       </div>
-      {/* <footer className="footer vw-100 border vh-20">
-            <Footer/>
-        </footer> */}
     </div>
   );
 }

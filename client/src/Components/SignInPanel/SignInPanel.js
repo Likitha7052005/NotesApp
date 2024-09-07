@@ -1,4 +1,4 @@
-import { Navigate, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "./SignInPanel.css";
 import { useEffect, useState } from "react";
 const { signInApi } = require("../../api/auth/signin/signin.api");
@@ -45,22 +45,18 @@ function SignInPanel() {
       } else {
         const token = response.data.accessToken;
         const emailId = response.data.emailId;
-        const name =  response.data.name;
+        const name = response.data.name;
         const userName = response.data.userName;
         sessionStorage.setItem("token", token);
-        sessionStorage.setItem("emailId",emailId);
-        sessionStorage.setItem("name",name);
-        sessionStorage.setItem("userName",userName);
+        sessionStorage.setItem("emailId", emailId);
+        sessionStorage.setItem("name", name);
+        sessionStorage.setItem("userName", userName);
         navigate("/home");
       }
     } catch (err) {
       console.log("Something Went Wrong!");
     }
   }
-
-  const goToSkipPage = () => {
-    navigate("/home/unsigned");
-  };
 
   const goToSignUpPage = () => {
     navigate("/signup");
@@ -89,7 +85,11 @@ function SignInPanel() {
               value={password}
               placeholder="Password"
             ></input>
-            <button className="signin-btn text-white" type="submit" placeholder="Sign in">
+            <button
+              className="signin-btn text-white"
+              type="submit"
+              placeholder="Sign in"
+            >
               sign in
             </button>
             <div className="error-div text-danger">{errorMessage}</div>
@@ -97,9 +97,6 @@ function SignInPanel() {
               <span className="mt-5 hover" onClick={goToSignUpPage}>
                 New User ? Sign up
               </span>
-              {/* <span className="mt-5 hover" onClick={goToSkipPage}>
-                Skip
-              </span> */}
             </div>
           </form>
         </div>
