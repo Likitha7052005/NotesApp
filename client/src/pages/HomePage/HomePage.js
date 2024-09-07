@@ -6,7 +6,7 @@ import SearchBar from "../../features/searchBar/SearchBar";
 import "./HomePage.css"
 
 function HomePage(){
-    return <div>
+    return <div className="home-page">
         <HomePageHeader />
         <SearchBar />
         <Notes />

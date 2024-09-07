@@ -52,10 +52,10 @@ function NoteOpened() {
           <pre className="rounded-2 border p-2 h-100 bg-light">{noteBody}</pre>
         </div>
         <div className="footer-div">
-          <button type="button" className="rounded border bg-black text-white" onClick={deleteNote}>
+          <button type="button" className="rounded text-white" onClick={deleteNote}>
             delete
           </button>
-          <button type="button" className="rounded border bg-black text-white" onClick={editNote}>
+          <button type="button" className="rounded text-white" onClick={editNote}>
             Edit
           </button>
         </div>

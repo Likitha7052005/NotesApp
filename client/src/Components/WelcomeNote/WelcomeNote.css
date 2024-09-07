@@ -5,13 +5,17 @@
 }
 
 .note-main-div{
-    border: 2px solid black;
+    /* border: 2px solid black; */
     height: 60%;
     width: 50%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     border-radius: 7px;
+    background-color: white;
+    box-shadow: 5px 5px 10px #5563c1;
+    /* font-family: "Times New Roman", Times, serif; */
+    /* font-family: "Playfair Display", serif; */
     /* min-width: 400px; */
 }
 
@@ -22,7 +26,10 @@
     justify-content: end;
     align-items: center;
     padding: 5px;
-    border: 2px solid black;
+    border-radius:  7px 7px 0px 0px;
+    /* background: linear-gradient(135deg, #667eea, #764ba2); */
+    /* background-color: #5563c1; */
+    background-color: #6d60cc ;
 }
 
 .close-btn-div > button{
@@ -33,7 +40,6 @@
 }
 
 .date-div{
-    border: 2px solid black;
     height: 10%;
     width: 90%;
     padding: 5px;
@@ -41,10 +47,10 @@
     display: flex;
     align-items: center;
     margin : 5px 0;
+    
 }
 
 .heading-div{
-    border: 2px solid black;
     display: flex;
     height: 15%;
     width: 90%;
@@ -55,7 +61,6 @@
 }
 
 .body-div{
-    border: 2px solid black;
     height: 55%;
     width: 90%;
     padding: 5px;

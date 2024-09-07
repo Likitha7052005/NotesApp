@@ -1,5 +1,4 @@
 import axios from "axios";
-import { getToken } from "../../Modules/token";
 const URL = process.env.REACT_APP_URL;
 
 export const getNotes = async () => {
@@ -14,13 +13,19 @@ export const getNotes = async () => {
 };
 
 export const createNote = async (noteDetails) => {
-  const token = sessionStorage.getItem("token");
-  const response = await axios.post(`${URL}/notes/create`, noteDetails, {
-    headers: {
-      "x-access-token": token,
-    },
-  });
-  return response;
+  try{
+    const token = sessionStorage.getItem("token");
+    const response = await axios.post(`${URL}/notes/create`, noteDetails, {
+      headers: {
+        "x-access-token": token,
+      },
+    });
+    console.log(response)
+    return response;
+  }catch(err){
+    console.log(err)
+    return err
+  }
 };
 
 export const getNoteById = async (id) => {

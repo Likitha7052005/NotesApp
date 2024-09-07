@@ -10,6 +10,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background: linear-gradient(135deg, #92e1ff , #8878ff );
 }
 
 .edit-note-div .edit-note{
@@ -43,6 +44,7 @@
     height: 100%;
     width: 100%;
     background-color: rgba(255, 215, 0,0.2);
+    box-shadow: 5px 5px 10px #5563c1;
 }
 
 .edit-note-div textarea{
@@ -50,12 +52,15 @@
     width: 100%;
     resize: none;
     background-color: rgba(255, 215, 0,0.2);
+    box-shadow: 5px 5px 10px #5563c1;
 }
 
 .edit-note-div button{
     height: 100%;
     width: 30%;
-    background-color: #FFD700;
+    background-color: #5563c1;
+    box-shadow: 5px 5px 10px #3d488e;
+    border: none !important;
 }
 
 .edit-note-div .footer-div{

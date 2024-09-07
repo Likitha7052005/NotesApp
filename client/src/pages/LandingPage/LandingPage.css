@@ -4,6 +4,8 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    /* background: linear-gradient(135deg, #92e1ff , #8878ff ); */
+    background: linear-gradient(135deg,  #8878ff , #92e1ff );
 }
 
 @media screen and (max-width:1000px) {

@@ -23,12 +23,16 @@
     padding: 10px;
     justify-content: start;
     align-items: center;
+    
 }
 
 .new-note .new-note-date >p{
     height: 100%;
     margin: 0;
-    background-color: rgba(255, 215, 0,0.2);
+    /* box-shadow: 0px 0px 2px grey; */
+    box-shadow: 5px 5px 10px #5563c1;
+    background-color: white;
+    
 }
 
 .new-note .new-note-heading{
@@ -46,20 +50,22 @@
 .new-note-div input{
     height: 100%;
     width: 100%;
-    background-color: rgba(255, 215, 0,0.2);
+    box-shadow: 5px 5px 10px #5563c1;
 }
 
 .new-note-div textarea{
     height: 100%;
     width: 100%;
     resize: none;
-    background-color: rgba(255, 215, 0,0.2);
+    box-shadow: 5px 5px 10px #5563c1;
 }
 
 .new-note-div button{
     height: 100%;
     width: 30%;
-    background-color: #FFD700;
+    background-color: #5563c1;
+    box-shadow: 5px 5px 10px #3d488e;
+    border: none !important;
 }
 
 .new-note .footer-div{

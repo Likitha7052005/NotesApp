@@ -5,7 +5,6 @@ import HomePageHeader from "../../Components/HomePageHeader/HomePageHeader";
 import Loader from "../../Components/Loader/Loader";
 import { inputDate , outputDate} from "../../Modules/date";
 import "./EditNotePage.css"
-import Footer from "../../Components/Footer/Footer";
 const {todayDateString, todayDate} = require("../../Modules/date");
 
 function EditNotePage() {
@@ -48,7 +47,6 @@ function EditNotePage() {
     e.preventDefault()
     if(window.confirm("Save Changes ?")){
         const date = outputDate(noteDate);
-        // setNoteDate(date)
         console.log(date);
         console.log(noteDetails)    
         await updateNote(id,noteDetails);
@@ -91,10 +89,10 @@ function EditNotePage() {
               <textarea value={noteBody} className="rounded-2 bg-light border p-2 h-100" rows={2} required onChange = {changeBody}></textarea>
             </div>
             <div className="footer-div">
-              <button type="button" className="rounded border bg-black text-white" onClick={cancelChanges}>
+              <button type="button" className=" rounded text-white" onClick={cancelChanges}>
                 Cancel
               </button>
-              <button type="submit" className="rounded border bg-black text-white">save</button>
+              <button type="submit" className="rounded text-white">save</button>
             </div>
           </form>
         </div>
@@ -110,9 +108,6 @@ function EditNotePage() {
     <div className="edit-note-div-main">
       <HomePageHeader />
       {isLoading ? <Loader /> : showNote()}
-      {/* <footer className="footer vw-100 border vh-20">
-            <Footer/>
-        </footer> */}
     </div>
   );
 }

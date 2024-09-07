@@ -5,16 +5,12 @@ function WelcomeNote(){
 
     const note = {
         date : todayDateString(),
-        heading : "Hello! Welcome To Sticky Notes.",
+        heading : "Hello! Welcome To Notes App.",
         body : "Create and Manage you Daily Notes Here"
     }
 
     return <div className="note-main-div">
-        <div className="close-btn-div bg-black">
-            {/* <span class="material-symbols-outlined close-btn">
-                close
-            </span> */}
-            <button className="h-75"></button>
+        <div className="close-btn-div">
         </div>
         <div className="date-div bg-light border">
             <p className="h-100 m-0 d-flex align-items-center">{note.date}</p>
@@ -25,14 +21,6 @@ function WelcomeNote(){
         <div className="body-div bg-light border">
             <p>{note.body}</p>
         </div>
-        {/* <div className="footer-btn-div">
-            <span class="material-symbols-outlined">
-                delete
-            </span>
-            <span class="material-symbols-outlined">
-                edit
-            </span>
-        </div> */}
     </div>
 }
 

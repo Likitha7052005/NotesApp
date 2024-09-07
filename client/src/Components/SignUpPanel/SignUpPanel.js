@@ -63,9 +63,9 @@ function SignUpPanel() {
 
   return (
     <div className="main-div p-5">
-      <div className="signup-panel-div bg-white p-1 h-75 w-100">
+      <div className="signup-panel-div bg-white p-1 w-100">
         <div className="header-div">
-          <h3>Welcome to Sticky Notes!</h3>
+          <h3>Welcome to Notes App!</h3>
           <p>Sign up to continue</p>
         </div>
         <div className="form-div">
@@ -137,13 +137,13 @@ function SignUpPanel() {
             {/* <button type="submit" className="btn btn-primary">
               Sign up
             </button> */}
-            <button className="signup-btn bg-black text-white" type="submit" placeholder="Sign up">
+            <button className="signup-btn text-white" type="submit" placeholder="Sign up">
               sign up
             </button>
-            <div className="error-div">{errorMessage}</div>
+            <div className="error-div text-danger">{errorMessage}</div>
             <div className="footer-div">
-              <span className="mt-5 hover" onClick={goToSignupPage}>
-                New User ? Sign up
+              <span className="hover" onClick={goToSignupPage}>
+                Already have account ? Sign in
               </span>
               {/* <span className="mt-5 hover" onClick={goToSkipPage}>
                 Skip

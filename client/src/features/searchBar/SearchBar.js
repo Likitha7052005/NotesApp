@@ -33,7 +33,7 @@ function SearchBar() {
         >
         </input>
         <button
-          className="btn btn-outline-secondary bg-black text-white"
+          className="btn btn-outline-secondary text-white"
           type="button"
           id="button-addon2"
           onClick={clearValue}

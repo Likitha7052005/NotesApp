@@ -2,7 +2,6 @@ import { useNavigate } from "react-router-dom";
 import "./HomePageHeader.css";
 
 function HomePageHeader() {
-  
   const navigate = useNavigate();
 
   const logOut = () => {
@@ -14,12 +13,12 @@ function HomePageHeader() {
     navigate("/home");
   };
 
-  const goToProfilePage = ()=>{
+  const goToProfilePage = () => {
     navigate("/profile");
-  }
+  };
 
   return (
-    <div className="home-page-header-div bg-black text-white">
+    <div className="home-page-header-div text-white">
       <h1 onClick={goToHome}>Notes App</h1>
       <div className="dropdown">
         <button
@@ -32,7 +31,11 @@ function HomePageHeader() {
         </button>
         <ul className="dropdown-menu">
           <li>
-            <button className="dropdown-item" type="button" onClick={goToProfilePage}>
+            <button
+              className="dropdown-item"
+              type="button"
+              onClick={goToProfilePage}
+            >
               Profile
             </button>
           </li>

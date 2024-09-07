@@ -5,7 +5,9 @@
 }
 
 .main-div{
-    background-color: black;
+    /* background: linear-gradient(135deg, #667eea, #764ba2); */
+    /* background: linear-gradient(135deg,  #d7bde2  , #f8f9f9); */
+    background: white;
     height : 100vh;
     width: 35vw;
     display: flex;
@@ -23,6 +25,8 @@
     justify-content: center;
     border-radius: 10px;
     background-color: rgba(263,263,263,0.7);
+    background: linear-gradient(135deg, #92e1ff , #8878ff );
+    box-shadow: 5px 5px 10px #5563c1;
 }
 
 .header-div{
@@ -67,7 +71,7 @@
 .signin-input{
     width: 90%;
     padding : 7px;
-    height: 13%;
+    height: 15%;
     margin: 10px 0px;
     border-radius: 7px;
     border: none;
@@ -88,13 +92,20 @@
 }
 
 .signin-btn{
-    height: 10%;
+    height: 15%;
     width: 40%;
     border-radius: 7px;
     border: none;
     margin: 10px 0px;
     font-size: 1.1em;
+    /* background-color: #667eea; */
+    background-color: #6d60cc ;
+    transition: background-color 0.3s
 }
+
+.signin-btn:hover {
+    background-color: #5563c1;
+  }
 
 .hover:hover{
     cursor: pointer;

@@ -70,7 +70,7 @@ function SignInPanel() {
     <div className="main-div">
       <div className="signin-panel-div bg-white text-dark p-1 w-100">
         <div className="header-div">
-          <h3>Welcome to Sticky Notes!</h3>
+          <h3>Welcome to Notes App!</h3>
           <p>Sign in to continue</p>
         </div>
         <div className="form-div">
@@ -89,10 +89,10 @@ function SignInPanel() {
               value={password}
               placeholder="Password"
             ></input>
-            <button className="signin-btn bg-black text-white" type="submit" placeholder="Sign in">
+            <button className="signin-btn text-white" type="submit" placeholder="Sign in">
               sign in
             </button>
-            <div className="error-div">{errorMessage}</div>
+            <div className="error-div text-danger">{errorMessage}</div>
             <div className="footer-div">
               <span className="mt-5 hover" onClick={goToSignUpPage}>
                 New User ? Sign up

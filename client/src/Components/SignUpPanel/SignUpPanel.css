@@ -38,13 +38,16 @@
     flex-wrap: wrap;
     justify-content: center;
     border-radius: 10px;
-    background-color: rgba(263,263,263,0.7);
+    /* background-color: rgba(263,263,263,0.7); */
+    background: linear-gradient(135deg, #92e1ff , #8878ff );
+    box-shadow: 5px 5px 10px #5563c1;
+    padding: 10px !important;
 }
 
 .main-div .signup-input{
     width: 90%;
     padding : 7px;
-    height: 13%;
+    height: 20%;
     margin: 10px 0px;
     border-radius: 7px;
     border: none;
@@ -63,12 +66,19 @@
 }
 
 .signup-btn{
-    height: 10%;
+    height: 20%;
     width: 40%;
     border-radius: 7px;
     margin: 10px 0px;
     font-size: 1.1em;
     border: none;
+    background-color: #6d60cc ;
+    transition: background-color 0.3s
+
+}
+
+.signup-btn:hover{
+    background-color: #5563c1;
 }
 
 .hover:hover{

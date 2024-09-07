@@ -1,21 +1,26 @@
 import { useNavigate } from "react-router-dom";
-import "./AddBtn.css"
+import "./AddBtn.css";
 
-function AddBtn(){
+function AddBtn() {
+  const navigate = useNavigate();
 
-    const navigate = useNavigate();
-    
-    function goToCreatePage(){
-        navigate("/note/create");
-    }
+  function goToCreatePage() {
+    navigate("/note/create");
+  }
 
-    return <div className="add-btn-div flex">
-        <button type="button" className="new-btn flex border bg-black text-light" onClick={goToCreatePage}>
-            <span class="material-symbols-outlined full-size flex">
-                sticky_note
-            </span>
-        </button>
+  return (
+    <div className="add-btn-div flex">
+      <button
+        type="button"
+        className="new-btn flex border text-light"
+        onClick={goToCreatePage}
+      >
+        <span class="material-symbols-outlined full-size flex">
+          sticky_note
+        </span>
+      </button>
     </div>
+  );
 }
 
 export default AddBtn;

@@ -1,9 +1,3 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 .flex{
     display: flex;
     justify-content: center;
@@ -20,17 +14,11 @@
     padding: 0;
 }
 
-/* .add-btn-div{
-    position: relative;
-    right : 4vh;
-    bottom: 4vh;
-} */
-
 .new-btn {
     height: 100%;
     width: 100%;
     border-radius:10px ;
-    
+    background-color: #5563c1;
 }
 
 .full-size{

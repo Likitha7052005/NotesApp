@@ -10,8 +10,6 @@ export const notesDataSlice = createSlice({
     initialState,
     reducers: {
         setData : (state,action) => {
-            // state.value.push(action.payload) 
-            console.log(state)
             state.value = action.payload
         },
     },

@@ -3,3 +3,10 @@
     width: 100vw;
 }
    */
+
+   .home-page{
+    background: linear-gradient(135deg, #92e1ff , #8878ff );
+    min-height: 100vh;
+    height: 100%;
+    width: 100vw;
+   }

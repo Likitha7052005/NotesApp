@@ -4,6 +4,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    background: linear-gradient(135deg, #92e1ff , #8878ff );
 }
 
 .open-note{
@@ -23,6 +24,7 @@
     padding: 10px;
     justify-content: start;
     align-items: center;
+    
 }
 
 .open-note .heading{
@@ -51,7 +53,9 @@
 .open-note button{
     height: 100%;
     width: 30%;    
-    background-color: #FFD700;
+    background-color: #5563c1;
+    box-shadow: 5px 5px 10px #3d488e;
+    border: none !important;
 }
 
 .open-note pre{
@@ -59,15 +63,18 @@
     text-wrap: wrap;
     background-color: rgba(255, 215, 0,0.2);
     min-height: 50vh;
+    box-shadow: 5px 5px 10px #5563c1;
 }
 
 
 .open-note h6{
     background-color: rgba(255, 215, 0,0.2);
+    box-shadow: 5px 5px 10px #5563c1;
 }
 
 .open-note h1{
     background-color: rgba(255, 215, 0,0.2);
+    box-shadow: 5px 5px 10px #5563c1;
 }
 
 button :hover{
