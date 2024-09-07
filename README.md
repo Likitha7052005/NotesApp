@@ -44,7 +44,7 @@ To get started with the NotesApp locally, follow these steps:
 3. **Environment Variables**:
    Create a `.env` file in the `server` directory with the following variables:
    ```env
-   MONGO_URI=your_mongo_database_uri
+   URL=your_mongo_database_uri
    PORT=5000
    ```
 
