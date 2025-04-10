@@ -1,27 +1,35 @@
-require("dotenv").config();
+  require("dotenv").config();
 
-const express = require("express");
-const bodyParser = require("body-parser");
-require("dotenv").config();
-const {DB_URL} = require("./configs/db.config");
-const mongoose = require("mongoose");
-const { PORT } = require("./configs/server.config");
-const app = express();
-var cors = require('cors')
-const MONGODB_URI = process.env.MONGODB_URI;
-app.use(cors())
-console.log("MONGODB_URI:", process.env.MONGODB_URI);
-mongoose.connect(MONGODB_URI).then(()=>{
-    console.log("Connected to DataBase");
-}).catch((err)=>{
-    console.log({message : err});
-})
-app.use(bodyParser.json());
-require("./src/Routes/auth.routes")(app);
-require("./src/Routes/notes.routes")(app);
+  const express = require("express");
+  const bodyParser = require("body-parser");
+  const mongoose = require("mongoose");
+  const cors = require("cors");
 
+  const { PORT } = require("./configs/server.config");
 
-app.listen(PORT,()=>{
-    console.log("Server Online");
-})
+  const app = express();
+  app.use(cors());
+
+  const MONGODB_URI = process.env.MONGODB_URI;
+
+  if (!MONGODB_URI) {
+    console.error("MONGODB_URI is not defined. Please check your .env file.");
+    process.exit(1);
+  }
+
+  mongoose.connect(MONGODB_URI)
+    .then(() => {
+      console.log("Connected to Database");
+    })
+    .catch((err) => {
+      console.error("Database connection error:", err);
+    });
+
+  app.use(bodyParser.json());
+  require("./src/Routes/auth.routes")(app);
+  require("./src/Routes/notes.routes")(app);
+
+  app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
+  });
 
