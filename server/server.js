@@ -8,8 +8,7 @@ const mongoose = require("mongoose");
 const { PORT } = require("./configs/server.config");
 const app = express();
 var cors = require('cors')
-const MONGODB_URI = "mongodb+srv://112215046:cMTDeffOBLDdzw1V@notescluster.3du8oxr.mongodb.net/?retryWrites=true&w=majority&appName=NotesCluster";
-
+const MONGODB_URI = process.env.MONGODB_URI;
 app.use(cors())
 console.log("MONGODB_URI:", process.env.MONGODB_URI);
 mongoose.connect(MONGODB_URI).then(()=>{
