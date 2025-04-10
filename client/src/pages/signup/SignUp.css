@@ -1,0 +1,16 @@
+.sign-up-page{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background: linear-gradient(135deg,  #8878ff , #92e1ff );
+}
+
+@media screen and (max-width:1000px) {
+    .sign-up-page{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+}

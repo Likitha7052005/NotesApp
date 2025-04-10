@@ -1,0 +1,26 @@
+.card {
+    width: calc(31%);
+}
+
+.note-card{
+    height: 31vh !important; 
+    box-shadow: 5px 5px 10px #5563c1;
+    border: none !important;
+} 
+
+.card-date{
+    background-color: #5563c1 !important;
+}
+
+@media screen and (max-width: 1335px) {
+    .note-card{
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .note-card{
+        width: 100%;
+    }
+}
+

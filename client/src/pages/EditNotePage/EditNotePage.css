@@ -1,0 +1,72 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.edit-note-div{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #92e1ff , #8878ff );
+}
+
+.edit-note-div .edit-note{
+    height: 95%;
+}
+
+.edit-note-div .date{
+    height: 8vh;
+    width: 100%;
+    padding: 10px;
+    justify-content: start;
+    align-items: center;
+}
+
+.edit-note-div .heading{
+    height: 8vh;
+    padding: 10px;
+    width: 100%;
+}
+
+.edit-note-div .body{
+    height: 65vh;
+    width: 100%;
+    padding: 10px;
+}
+
+.edit-note-div input{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 215, 0,0.2);
+    box-shadow: 5px 5px 10px #5563c1;
+}
+
+.edit-note-div textarea{
+    height: 100%;
+    width: 100%;
+    resize: none;
+    background-color: rgba(255, 215, 0,0.2);
+    box-shadow: 5px 5px 10px #5563c1;
+}
+
+.edit-note-div button{
+    height: 100%;
+    width: 30%;
+    background-color: #5563c1;
+    box-shadow: 5px 5px 10px #3d488e;
+    border: none !important;
+}
+
+.edit-note-div .footer-div{
+    margin: 0;
+    height: 6vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 5px;
+}
