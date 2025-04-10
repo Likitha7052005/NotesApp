@@ -8,6 +8,7 @@ const app = express();
 var cors = require('cors')
 
 app.use(cors())
+console.log("MONGODB_URI:", process.env.MONGODB_URI);
 mongoose.connect(DB_URL).then(()=>{
     console.log("Connected to DataBase");
 }).catch((err)=>{
