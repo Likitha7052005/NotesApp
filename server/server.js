@@ -12,7 +12,7 @@ const MONGODB_URI = "mongodb+srv://112215046:YOUR_PASSWORD@notescluster.3du8oxr.
 
 app.use(cors())
 console.log("MONGODB_URI:", process.env.MONGODB_URI);
-mongoose.connect(DB_URL).then(()=>{
+mongoose.connect(MONGODB_URI).then(()=>{
     console.log("Connected to DataBase");
 }).catch((err)=>{
     console.log({message : err});
