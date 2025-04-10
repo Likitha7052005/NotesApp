@@ -1,0 +1,30 @@
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-btn-div{
+    position: fixed;
+    right : 4vh;
+    bottom: 4vh;
+    height: 7vh;
+    width: 7vh;
+    margin: 0%;
+    padding: 0;
+}
+
+.new-btn {
+    height: 100%;
+    width: 100%;
+    border-radius:10px ;
+    background-color: #5563c1;
+}
+
+.full-size{
+    height: 100%;
+    width: 100%;
+    font-size: 3em;
+}
+
+  

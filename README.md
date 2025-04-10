@@ -1,14 +1,44 @@
-# Project Overview
-This project is a responsive note-taking website built using modern web development technologies. The frontend is developed with React.JS to provide a fast and user-friendly interface. Redux Toolkit is used for efficient state management, ensuring smooth performance and a consistent user experience across multiple devices. The design focuses on accessibility and ease of use, making it easy for users to create, read, update, and delete notes.
+# NotesApp
 
-# Features
-* **Responsive Design:** Optimized for various devices, ensuring a seamless experience on both mobile and desktop.
-* **Fast User Interface:** Built with React.JS for quick loading times and smooth interactions.
-* **State Management:** Implemented with Redux Toolkit to handle state efficiently and maintain performance.
-* **CRUD Operations:** Users can easily create, read, update, and delete notes.
+**NotesApp** is a responsive, mobile-friendly note-taking application that allows users to create, update, and delete notes effortlessly. It includes both a frontend (React) and backend (Node.js/Express) with MongoDB for storage.
 
-# Technologies Used
-* **Frontend:** React.JS, Redux Toolkit, HTML, CSS, JavaScript
-* **Backend:** Express.JS, Node.JS 
-* **Database:** MongoDB 
-* **Hosting:** Render.com
+## 🚀 Features
+
+- **Responsive Design**: Works smoothly across devices—desktop, tablet, and mobile.
+- **Fast Interface**: Built with React.js for quick rendering and great UX.
+- **CRUD Operations**: Create, Read, Update, and Delete notes.
+- **Authentication**: Sign-up, sign-in, and token-based verification.
+- **RESTful API**: Handles all backend operations with Express.js.
+- **State Management**: Uses Redux Toolkit for smooth state handling.
+
+## 🛠 Technologies Used
+
+- **Frontend**: React.js, Redux Toolkit, HTML, CSS, JavaScript
+- **Backend**: Node.js, Express.js
+- **Database**: MongoDB
+- **Deployment**: Render.com
+
+## 🔌 API Endpoints
+
+### Notes
+- `GET /home/notes`: Retrieve all notes
+- `POST /notes/create`: Create a new note
+- `PUT /notes/edit/:id`: Edit a note
+- `DELETE /notes/delete/:id`: Delete a note
+- `GET /home/notes/:id`: Get a single note
+
+### Auth
+- `POST /auth/signup`: User sign-up
+- `POST /auth/signin`: User sign-in
+- `POST /auth/verify`: Verify token
+
+## 🔗 Deployment Links
+
+- **Frontend**: _pending_
+- **Backend**: https://api-stickynotes.onrender.com
+
+## 📦 Setup Instructions
+
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/Likitha7052005/NotesApp.git
